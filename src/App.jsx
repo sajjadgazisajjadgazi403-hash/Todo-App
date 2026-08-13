@@ -1,11 +1,11 @@
 import { useState } from 'react'
 import './App.css'
-import { Todoprovider } from '../Todoprovider'
+import { Todoprovider } from './Todoprovider'
 import { TodoApp } from './TodoApp'
 function App() {
 
   return (
-    <Todoprovider >
+    <Todoprovider>
      <TodoApp />
     </Todoprovider>
     

@@ -1,10 +1,10 @@
-import { CreateContext } from "../../context api/src/CreateContext";
-import { Todoprovider } from "../Todoprovider";
-import { createContext, useContext, useEffect } from "react";
+import { Todocreate } from "./Todocreate";
+import { Todoprovider } from "./Todoprovider";
+import { useContext, useEffect } from "react";
 import { useState } from "react";
 export   function TodoApp(){
 const [title,settitle]=useState('')
-const {Todos,addTodo,deleteTodo,UpdateTodo,toggleTodo}=useContext(CreateContext)
+const {Todos,addTodo,deleteTodo,UpdateTodo,toggleTodo}=useContext(Todocreate)
 return(
 
 <div  className="flex items-center justify-center mt-20 ">

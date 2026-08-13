@@ -1,4 +1,4 @@
-import { CreateContext } from "../context api/src/CreateContext";
+import { Todocreate } from "./Todocreate";
 import { useState } from "react";
 import { useEffect } from "react";
  export   function Todoprovider({children}){
@@ -47,8 +47,8 @@ localStorage.setItem('Todos',JSON.stringify(Todos))
 
 
 return (
-<CreateContext.Provider  value={{Todos,setTodos,addTodo,deleteTodo,UpdateTodo,toggleTodo}}>
+<Todocreate.Provider  value={{Todos,setTodos,addTodo,deleteTodo,UpdateTodo,toggleTodo}}>
     {children}
-</CreateContext.Provider>
+</Todocreate.Provider>
 )
 }
